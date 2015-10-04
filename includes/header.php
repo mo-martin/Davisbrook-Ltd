@@ -2,7 +2,7 @@
 <html lang="en-gb">
     <head>
         <meta charset="utf-8">
-        <title><?php echo $title ?></title>
+        <title><?php echo $title ?> - Davis Brook Ltd Student Houses in Manchester, Rusholme, University Area, Levenshulme</title>
 		<meta name="description" content="Davis Brook Ltd Student Housing Manchester, Fallowfield, Lenshulme, Rusholme, University area">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="Nick, Brook, Davis, student, house, agency, housing, manchester, fallowfield, levenshulme, cheap, nice, kitchen, tv, desk, bed, lounge, bedroom">
@@ -45,13 +45,7 @@
 </nav>
 
 <header class="mainheader" role="banner">
-	<div class="headerbg">
+	<div class="headertext">
+	<h1>Header (logo goes here)</h1>
 	</div>
-</header>
-	
-	
-	
-	
-	
-	
-	
+</header>	

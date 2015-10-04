@@ -1,4 +1,4 @@
-<?php $title = "Homepage";
+<?php $title = "About Us";
 include("includes/header.php"); ?>
 
 <main role="main">
