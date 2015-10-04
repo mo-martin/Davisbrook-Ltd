@@ -4,17 +4,6 @@ html, body {
   width: 100%;
   color: black; }
 
-.mainnav {
-  width: 100%;
-  height: 50px;
-  position: absolute; }
-
-.desktopnav {
-  display: block; }
-
-.mobilenav, button.navtoggle {
-  display: none; }
-
 #skiplinks {
   position: absolute;
   left: -10000px;
@@ -23,27 +12,74 @@ html, body {
   height: 1px;
   overflow: hidden; }
 
+/*Navigation*/
+.mainnav {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  background: #64137B; }
+
+/*Desktop nav*/
+.desktopnav {
+  display: block; }
+
+.desktopnav ul.desktoplinks {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  display: table;
+  min-height: 50px; }
+
+.desktopnav ul.desktoplinks li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px;
+  border-right: 1px solid #A37EAE; }
+
+.desktopnav ul.desktoplinks li:first-child {
+  border-left: 1px solid #A37EAE; }
+
+.desktopnav ul.desktoplinks a {
+  color: white;
+  text-decoration: none; }
+
+.mobilenav, .desktopnav {
+  min-height: 50px;
+  height: auto; }
+
+/*Mobile Nav*/
+.mobilenav {
+  text-align: center; }
+
+.mobilenav, button.navtoggle {
+  display: none; }
+
+.mobilenav ul.mobilelinks {
+  display: none;
+  list-style: none;
+  padding-left: 0px; }
+
 @media (max-width: 768px) {
   .desktopnav {
     display: none; }
 
-  /*.mobilenav {
-  	display:block;
-  }*/
+  .mobilenav {
+    display: block; }
+
   button.navtoggle {
-    display: block;
-    position: absolute;
-    top: 15px;
-    right: 15px;
+    display: table-cell;
+    margin: 5px auto;
+    text-align: center;
     border: 0;
     text-indent: 200%;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.8) url(../images/navbutton.png) center no-repeat;
+    background: white url(../images/navbutton.png) center no-repeat;
     border: 1px solid #ddd;
-    border-radius: 3px;
+    border-radius: 5px;
     background-size: 80%;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     outline: none;
     opacity: 1;
     transition: opacity .25s ease-in-out;
@@ -51,6 +87,20 @@ html, body {
     -webkit-transition: opacity .25s ease-in-out; }
 
   button.navtoggle:hover {
-    opacity: 0.5; } }
+    opacity: 0.7; }
+
+  ul.mobilelinks {
+    background: #8421A0;
+    margin: 0px;
+    padding: 0px 0px; }
+
+  ul.mobilelinks li {
+    padding: 15px 10px;
+    border-bottom: 1px solid #A37EAE; }
+
+  ul.mobilelinks a {
+    color: white;
+    text-decoration: none; } }
+/* Header */
 
 /*# sourceMappingURL=styles.css.map */

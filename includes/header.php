@@ -8,7 +8,9 @@
         <meta name="keywords" content="Nick, Brook, Davis, student, house, agency, housing, manchester, fallowfield, levenshulme, cheap, nice, kitchen, tv, desk, bed, lounge, bedroom">
 		<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/normalize.css">
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/nav.js"></script>
 		
 </head>
 
@@ -22,11 +24,34 @@
 			</p>
 </div>
 
-<nav class="mainnav">
-	<button class="navtoggle">toggle</button>
-		<ul class="links">
-			<li><a href="about.php">About Us</a></li>
-			<li><a href="properties.php">Our Properties</a></li>
-			<li><a href="contact.php">Contact</a></li>
-		</ul>
+<nav class="mainnav" role="navigation">
+	<div class="desktopnav">
+			<ul class="desktoplinks">
+				<li role="menuitem"><a href="index.php">Home</a></li>
+				<li role="menuitem"><a href="about.php">About Us</a></li>
+				<li role="menuitem"><a href="properties.php">Our Properties</a></li>
+				<li role="menuitem"><a href="contact.php">Contact Us</a></li>
+			</ul>
+	</div>
+	<div class="mobilenav">
+		<button class="navtoggle">toggle</button>
+			<ul class="mobilelinks">
+				<li role="menuitem"><a href="index.php">Home</a></li>
+				<li role="menuitem"><a href="about.php">About Us</a></li>
+				<li role="menuitem"><a href="properties.php">Our Properties</a></li>
+				<li role="menuitem"><a href="contact.php">Contact Us</a></li>
+			</ul>
+	</div>
 </nav>
+
+<header class="mainheader" role="banner">
+	<div class="headerbg">
+	</div>
+</header>
+	
+	
+	
+	
+	
+	
+	
